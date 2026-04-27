@@ -48,7 +48,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.25 }}
           className="mt-6 max-w-2xl text-lg md:text-xl text-muted-foreground"
         >
-          {profile.tagline} I design end-to-end ML systems — from EDA to production MLOps pipelines.
+          {profile.tagline}
         </motion.p>
 
         <motion.div

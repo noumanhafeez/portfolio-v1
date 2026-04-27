@@ -8,7 +8,7 @@ export function Skills() {
       id="skills"
       eyebrow="Skills"
       title="Tools I build with."
-      description="The stack I rely on across ML research, data engineering and production deployment."
+      description="The stack I rely on across AI & ML research, data engineering and production deployment."
     >
       <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {skills.map((group) => (
