@@ -7,9 +7,19 @@ import { GithubIcon, LinkedinIcon } from "./BrandIcons";
 export function Contact() {
   const items = [
     { icon: Mail, label: "Email", value: profile.email, href: `mailto:${profile.email}` },
-    { icon: Phone, label: "Phone", value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, "")}` },
+    {
+      icon: Phone,
+      label: "Phone",
+      value: profile.phone,
+      href: `tel:${profile.phone.replace(/\s/g, "")}`,
+    },
     { icon: MapPin, label: "Location", value: profile.location },
-    { icon: Globe, label: "Website", value: profile.website.replace("https://", ""), href: profile.website },
+    {
+      icon: Globe,
+      label: "Website",
+      value: profile.website.replace("https://", ""),
+      href: profile.website,
+    },
     { icon: GithubIcon, label: "GitHub", value: "noumanhafeez", href: profile.github },
     { icon: LinkedinIcon, label: "LinkedIn", value: "nouman-hafeez", href: profile.linkedin },
   ];
@@ -19,7 +29,7 @@ export function Contact() {
       id="contact"
       eyebrow="Contact"
       title="Let's build something intelligent."
-      description="Open to ML Engineer / Data Scientist roles, freelance projects and AI collaborations."
+      description="Open to AI & ML Engineer / Data Scientist roles, freelance projects and AI collaborations."
     >
       <Reveal>
         <div className="rounded-3xl border border-border bg-card p-8 md:p-12 shadow-elevated bg-hero relative overflow-hidden">
@@ -30,8 +40,8 @@ export function Contact() {
                 Have an <span className="text-gradient">AI idea</span>?
               </h3>
               <p className="mt-3 text-muted-foreground">
-                I'm always happy to chat about ML, MLOps and data products. Drop me a line — I usually
-                respond within a day.
+                I'm always happy to chat about ML, MLOps and data products. Drop me a line — I
+                usually respond within a day.
               </p>
               <a
                 href={`mailto:${profile.email}`}
@@ -68,7 +78,8 @@ export function Contact() {
         </div>
       </Reveal>
       <div className="mt-12 text-center text-xs font-mono-display text-muted-foreground">
-        © {new Date().getFullYear()} {profile.name}. Built with React, TanStack Start & Framer Motion.
+        © {new Date().getFullYear()} {profile.name}. Built with React, TanStack Start & Framer
+        Motion.
       </div>
     </Section>
   );

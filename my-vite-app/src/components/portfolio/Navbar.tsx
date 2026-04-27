@@ -40,7 +40,7 @@ export function Navbar() {
             N
           </span>
           <span className="font-mono-display text-sm tracking-wider text-muted-foreground group-hover:text-foreground transition">
-            nouman<span className="text-primary">.</span>ml
+            nouman<span className="text-primary">.</span>ai
           </span>
         </a>
         <ul className="hidden md:flex items-center gap-1">
