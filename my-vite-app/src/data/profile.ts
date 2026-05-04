@@ -98,17 +98,7 @@ export const education = [
 ];
 
 export const experience = [
-  {
-    company: "Arbisoft",
-    role: "Machine Learning Engineer",
-    location: "Lahore",
-    period: "Mar 2024 — June 2024",
-    points: [
-      "Built and evaluated predictive models on real-world housing datasets using ML & deep learning approaches.",
-      "Performed in-depth EDA to uncover patterns and data inconsistencies.",
-      "Designed end-to-end ML pipeline including preprocessing, feature engineering, and evaluation with RMSE & R².",
-    ],
-  },
+  
   {
   company: "Lahore Analytics Labs",
   role: "Web Data Engineer",
@@ -120,6 +110,27 @@ export const experience = [
     "Processed and structured scraped cryptocurrency metrics into clean datasets for downstream ML models and analytics dashboards.",
   ],
 },
+{
+    company: "Upwork",
+    role: "Mobile App Developer",
+    location: "Remote",
+    period: "Nov 2024 — Aug 2025",
+    points: [
+      "Delivered cross-platform mobile apps using React Native for iOS & Android with focus on responsive UI and performance.",
+      "Managed end-to-end development including API integration (Firebase, REST), deployment, and maintenance.",
+    ],
+  },
+{
+    company: "Arbisoft",
+    role: "Machine Learning Engineer",
+    location: "Lahore",
+    period: "Mar 2024 — June 2024",
+    points: [
+      "Built and evaluated predictive models on real-world housing datasets using ML & deep learning approaches.",
+      "Performed in-depth EDA to uncover patterns and data inconsistencies.",
+      "Designed end-to-end ML pipeline including preprocessing, feature engineering, and evaluation with RMSE & R².",
+    ],
+  },
   {
     company: "SortUp Dev",
     role: "React Native Developer",
@@ -130,14 +141,4 @@ export const experience = [
       "Collaborated with UI/UX to build intuitive, responsive screens and optimized cross-platform performance.",
     ],
   },
-  {
-    company: "Upwork",
-    role: "Mobile App Developer",
-    location: "Remote",
-    period: "Nov 2024 — Aug 2025",
-    points: [
-      "Delivered cross-platform mobile apps using React Native for iOS & Android with focus on responsive UI and performance.",
-      "Managed end-to-end development including API integration (Firebase, REST), deployment, and maintenance.",
-    ],
-  }
 ];
