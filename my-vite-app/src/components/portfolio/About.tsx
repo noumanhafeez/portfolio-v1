@@ -5,9 +5,9 @@ import { Brain, Cpu, Database, Rocket } from "lucide-react";
 
 const stats = [
   { icon: Brain, label: "ML / DL Models", value: "10+" },
-  { icon: Database, label: "Datasets Engineered", value: "20+" },
-  { icon: Rocket, label: "Production Pipelines", value: "3+" },
-  { icon: Cpu, label: "Years in Tech", value: "3+" },
+  { icon: Database, label: "Datasets Engineered", value: "15+" },
+  { icon: Rocket, label: "Production Pipelines", value: "1+" },
+  { icon: Cpu, label: "Years in Tech", value: "1+" },
 ];
 
 export function About() {
