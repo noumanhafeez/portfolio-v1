@@ -11,6 +11,59 @@ export type Project = {
 // 👉 To add a new project, just append a new object to this array.
 export const projects: Project[] = [
   {
+  title: "Agentic Multi-Tool Chatbot with RAG & Cloud Deployment",
+  description:
+    "Production-ready agentic multi-tool chatbot built using LangGraph with Retrieval-Augmented Generation (RAG) capabilities for context-aware responses. Designed with a multi-agent workflow, containerized using Docker, deployed on AWS, and integrated with a Streamlit frontend to deliver scalable and interactive AI experiences.",
+
+  tech: [
+    "Python",
+    "LangGraph",
+    "LangChain",
+    "LLM",
+    "RAG",
+    "Vector Database",
+    "Docker",
+    "AWS",
+    "Streamlit",
+    "FastAPI"
+  ],
+
+  highlights: [
+    "Built an agentic multi-tool chatbot architecture using LangGraph for dynamic task orchestration",
+    "Integrated Retrieval-Augmented Generation (RAG) pipeline for document-aware and contextual responses",
+    "Implemented multi-agent workflows with tool calling and memory management",
+    "Containerized the complete application using Docker for reproducible deployments",
+    "Deployed backend services on AWS with production-ready CI/CD practices",
+    "Developed an interactive Streamlit frontend for seamless user interaction",
+    "Designed scalable architecture to support real-time AI inference and extensibility"
+  ],
+
+  github: "https://github.com/noumanhafeez/Agentic-Multi-Tool-Chatbot",
+
+  featured: true,
+},
+{
+  title: "PDF Chat Assistant",
+  description:
+    "End-to-end Retrieval-Augmented Generation (RAG) system that enables users to upload PDFs and interact with them through a conversational AI interface powered by semantic search and LLM-based responses. The system is designed for scalable document understanding and intelligent question answering.",
+  tech: [
+    "Python",
+    "FastAPI",
+    "FAISS",
+    "Sentence Transformers",
+    "HuggingFace",
+    "Tesseract OCR"
+  ],
+  highlights: [
+    "Implemented full RAG pipeline including text extraction, chunking, embedding generation, and semantic retrieval",
+    "Built FAISS-based vector search engine for efficient and scalable document retrieval",
+    "Developed modular FastAPI backend with clean architecture and structured logging",
+    "Integrated OCR (Tesseract) for handling scanned and image-based PDFs"
+  ],
+  github: "https://github.com/noumanhafeez/pdf-chat-assistant",
+  featured: true,
+},
+  {
   title: "Fine-Tuned BERT Sentiment Analysis System",
   description:
     "End-to-end NLP system that uses a fine-tuned BERT model to classify text sentiment as positive or negative. Built with a complete ML pipeline including training on the IMDb dataset, FastAPI-based inference API, and an interactive web interface with confidence scores and visual analytics.",
@@ -33,27 +86,7 @@ export const projects: Project[] = [
   github: "https://github.com/noumanhafeez/sentiment-analysis-bert",
   featured: true,
 },
-  {
-  title: "PDF Chat Assistant",
-  description:
-    "End-to-end Retrieval-Augmented Generation (RAG) system that enables users to upload PDFs and interact with them through a conversational AI interface powered by semantic search and LLM-based responses. The system is designed for scalable document understanding and intelligent question answering.",
-  tech: [
-    "Python",
-    "FastAPI",
-    "FAISS",
-    "Sentence Transformers",
-    "HuggingFace",
-    "Tesseract OCR"
-  ],
-  highlights: [
-    "Implemented full RAG pipeline including text extraction, chunking, embedding generation, and semantic retrieval",
-    "Built FAISS-based vector search engine for efficient and scalable document retrieval",
-    "Developed modular FastAPI backend with clean architecture and structured logging",
-    "Integrated OCR (Tesseract) for handling scanned and image-based PDFs"
-  ],
-  github: "https://github.com/noumanhafeez/pdf-chat-assistant",
-  featured: true,
-},
+  
   {
   title: "Production MLOps Pipeline for Image Classification (CNN)",
   description:
