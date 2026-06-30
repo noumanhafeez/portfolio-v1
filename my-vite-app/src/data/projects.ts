@@ -10,6 +10,39 @@ export type Project = {
 
 // 👉 To add a new project, just append a new object to this array.
 export const projects: Project[] = [
+  
+  {
+  title: "Agentic Travel Assistant with Multi-Agent Workflow",
+
+  description:
+    "AI-powered travel planning assistant built using LangGraph and LangChain to automate itinerary generation through multi-agent orchestration. Integrated external travel tools for flight retrieval and hotel recommendations with persistent conversation memory and an interactive Streamlit interface.",
+
+  tech: [
+    "Python",
+    "LangGraph",
+    "LangChain",
+    "LLM",
+    "PostgreSQL",
+    "Streamlit",
+    "Tavily API"
+  ],
+
+  highlights: [
+    "Designed a multi-agent travel planning workflow using LangGraph",
+    "Integrated external APIs for flight retrieval and hotel recommendation",
+    "Implemented persistent memory and workflow checkpointing using PostgreSQL",
+    "Built modular agent architecture for scalable travel automation",
+    "Developed an interactive Streamlit interface for travel planning",
+    "Generated personalized itineraries through context-aware orchestration",
+    "Structured the system for extensibility and future tool integrations"
+  ],
+
+  github:
+    "https://github.com/noumanhafeez/Agentic-Travel-Assistant-LangGraph",
+
+  featured: true,
+},
+  
   {
   title: "Agentic Multi-Tool Chatbot with RAG & Cloud Deployment",
   description:
