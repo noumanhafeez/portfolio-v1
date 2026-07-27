@@ -10,6 +10,38 @@ export type Project = {
 
 // 👉 To add a new project, just append a new object to this array.
 export const projects: Project[] = [
+
+  {
+  title: "Hybrid Cache Bot for LLM Systems",
+
+  description:
+    "A hybrid caching system for LLM-based chatbots that reduces redundant model calls by resolving prompts through a layered cache stack — exact-match prompt caching, semantic similarity caching, and LLM fallback — before falling back to inference. Includes a FastAPI service, CLI testing tool, and a metrics layer for tracking cache performance.",
+
+  tech: [
+    "Python",
+    "FastAPI",
+    "Redis",
+    "FAISS",
+    "Ollama Embeddings",
+    "LLM"
+  ],
+
+  highlights: [
+    "Designed a HybridCache orchestrator resolving prompts through prompt cache, semantic cache, and LLM fallback",
+    "Implemented Redis-based PromptCache for exact-match lookups with latency tracking",
+    "Built FAISS + Ollama-embedding SemanticCache with similarity thresholding and index persistence",
+    "Developed a FastAPI service with chat, health check, and metrics endpoints",
+    "Built a CLI-based interactive app for manual testing of the cache stack",
+    "Introduced a CacheMetrics module tracking hit/miss rates, per-layer latency, and uptime",
+    "Centralized configuration for models, Redis/FAISS settings, and cache parameters",
+    "Added a placeholder for future LangSmith tracing integration"
+  ],
+
+  github:
+    "https://github.com/noumanhafeez/optimize-llm-caching-architecture",
+
+  featured: true,
+},
   
   {
   title: "Agentic Travel Assistant with Multi-Agent Workflow",
