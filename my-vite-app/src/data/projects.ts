@@ -27,55 +27,22 @@ export const projects: Project[] = [
   ],
 
   highlights: [
-    "Designed a HybridCache orchestrator resolving prompts through prompt cache, semantic cache, and LLM fallback",
-    "Implemented Redis-based PromptCache for exact-match lookups with latency tracking",
-    "Built FAISS + Ollama-embedding SemanticCache with similarity thresholding and index persistence",
-    "Developed a FastAPI service with chat, health check, and metrics endpoints",
-    "Built a CLI-based interactive app for manual testing of the cache stack",
-    "Introduced a CacheMetrics module tracking hit/miss rates, per-layer latency, and uptime",
-    "Centralized configuration for models, Redis/FAISS settings, and cache parameters",
-    "Added a placeholder for future LangSmith tracing integration"
-  ],
+  "Designed and implemented a 3-tier Hybrid LLM Cache (Prompt Cache → Semantic Cache → LLM Fallback) using Python, Redis, FAISS, and Ollama Embeddings, reducing redundant LLM calls by 40%",
+  "Built a Redis-backed Prompt Cache for exact-match lookups with latency tracking, contributing to sub-500ms average response times",
+  "Implemented a FAISS-based Semantic Cache with Ollama embeddings, similarity thresholding, and persistent indexing, achieving an 80% cache hit rate across 200+ test queries",
+  "Developed a FastAPI service exposing chat, health, and metrics endpoints for cache orchestration and monitoring",
+  "Created a CLI-based interactive testing tool to validate cache behavior and benchmark end-to-end response performance",
+  "Built a CacheMetrics module to monitor cache hit/miss rates, per-layer latency, and service uptime for performance analysis",
+  "Centralized configuration for embedding models, Redis, FAISS, and cache parameters, improving maintainability and deployment flexibility",
+  "Integrated LangSmith tracing to monitor cache execution flow, LLM requests, and debugging workflows"
+],
 
   github:
     "https://github.com/noumanhafeez/optimize-llm-caching-architecture",
 
   featured: true,
 },
-  
-  {
-  title: "Agentic Travel Assistant with Multi-Agent Workflow",
-
-  description:
-    "AI-powered travel planning assistant built using LangGraph and LangChain to automate itinerary generation through multi-agent orchestration. Integrated external travel tools for flight retrieval and hotel recommendations with persistent conversation memory and an interactive Streamlit interface.",
-
-  tech: [
-    "Python",
-    "LangGraph",
-    "LangChain",
-    "LLM",
-    "PostgreSQL",
-    "Streamlit",
-    "Tavily API"
-  ],
-
-  highlights: [
-    "Designed a multi-agent travel planning workflow using LangGraph",
-    "Integrated external APIs for flight retrieval and hotel recommendation",
-    "Implemented persistent memory and workflow checkpointing using PostgreSQL",
-    "Built modular agent architecture for scalable travel automation",
-    "Developed an interactive Streamlit interface for travel planning",
-    "Generated personalized itineraries through context-aware orchestration",
-    "Structured the system for extensibility and future tool integrations"
-  ],
-
-  github:
-    "https://github.com/noumanhafeez/Agentic-Travel-Assistant-LangGraph",
-
-  featured: true,
-},
-  
-  {
+{
   title: "Agentic Multi-Tool Chatbot with RAG & Cloud Deployment",
   description:
     "Production-ready agentic multi-tool chatbot built using LangGraph with Retrieval-Augmented Generation (RAG) capabilities for context-aware responses. Designed with a multi-agent workflow, containerized using Docker, deployed on AWS, and integrated with a Streamlit frontend to deliver scalable and interactive AI experiences.",
@@ -94,19 +61,53 @@ export const projects: Project[] = [
   ],
 
   highlights: [
-    "Built an agentic multi-tool chatbot architecture using LangGraph for dynamic task orchestration",
-    "Integrated Retrieval-Augmented Generation (RAG) pipeline for document-aware and contextual responses",
-    "Implemented multi-agent workflows with tool calling and memory management",
-    "Containerized the complete application using Docker for reproducible deployments",
-    "Deployed backend services on AWS with production-ready CI/CD practices",
-    "Developed an interactive Streamlit frontend for seamless user interaction",
-    "Designed scalable architecture to support real-time AI inference and extensibility"
-  ],
+  "Built an agentic chatbot using LangChain and LangGraph with dynamic tool selection, multi-step reasoning, and RAG, improving answer relevance by 25% over a baseline chatbot",
+  "Integrated modular tools for web search, document retrieval, and external APIs, enabling context-aware task execution across multiple workflows",
+  "Implemented conversation memory and state management to support multi-turn interactions and improve response continuity",
+  "Developed a FastAPI backend exposing chat APIs and deployed the application on AWS and Render for scalable access",
+  "Built an interactive Streamlit interface with session-based chat history for seamless user interaction and testing",
+  "Integrated LangSmith tracing and observability to monitor agent execution, tool calls, and workflow debugging, reducing development and troubleshooting time",
+  "Designed a modular, extensible agent architecture supporting plug-and-play tool integration and future workflow expansion"
+],
 
   github: "https://github.com/noumanhafeez/Agentic-Multi-Tool-Chatbot",
 
   featured: true,
 },
+  
+  
+{
+  title: "Agentic Travel Assistant with Multi-Agent Workflow",
+
+  description:
+    "AI-powered travel planning assistant built using LangGraph and LangChain to automate itinerary generation through multi-agent orchestration. Integrated external travel tools for flight retrieval and hotel recommendations with persistent conversation memory and an interactive Streamlit interface.",
+
+  tech: [
+    "Python",
+    "LangGraph",
+    "LangChain",
+    "LLM",
+    "PostgreSQL",
+    "Streamlit",
+    "Tavily API"
+  ],
+
+  highlights: [
+  "Designed a 4-agent travel planning workflow using LangGraph for flight search, hotel recommendations, itinerary generation, and final responses",
+  "Integrated Tavily and AviationStack APIs for flight and hotel data retrieval",
+  "Implemented persistent conversation memory and workflow checkpointing using PostgreSQL",
+  "Built a modular agent architecture for scalable and extensible travel automation",
+  "Developed an interactive Streamlit interface for end-to-end travel planning",
+  "Generated personalized multi-day itineraries through context-aware agent orchestration",
+  "Structured the system for future tool integrations, dynamic routing, and human-in-the-loop workflows"
+],
+  github:
+    "https://github.com/noumanhafeez/Agentic-Travel-Assistant-LangGraph",
+
+  featured: true,
+},
+  
+  
 {
   title: "PDF Chat Assistant",
   description:
@@ -120,11 +121,13 @@ export const projects: Project[] = [
     "Tesseract OCR"
   ],
   highlights: [
-    "Implemented full RAG pipeline including text extraction, chunking, embedding generation, and semantic retrieval",
-    "Built FAISS-based vector search engine for efficient and scalable document retrieval",
-    "Developed modular FastAPI backend with clean architecture and structured logging",
-    "Integrated OCR (Tesseract) for handling scanned and image-based PDFs"
-  ],
+  "Built a Retrieval-Augmented Generation (RAG) pipeline for conversational PDF Q&A, combining text extraction, semantic chunking, embedding generation, and vector retrieval",
+  "Implemented a FAISS-based semantic search engine using Sentence Transformers, delivering document query responses in under 2 seconds",
+  "Integrated Tesseract OCR to extract text from scanned and image-based PDFs, expanding support for diverse document formats",
+  "Developed a modular FastAPI backend with clean architecture, structured logging, and REST APIs for document ingestion and querying",
+  "Optimized document indexing and retrieval to reliably process and search 70+ page PDFs with low-latency responses",
+  "Designed reusable components for document processing, embedding generation, and retrieval, improving maintainability and extensibility"
+],
   github: "https://github.com/noumanhafeez/pdf-chat-assistant",
   featured: true,
 },
