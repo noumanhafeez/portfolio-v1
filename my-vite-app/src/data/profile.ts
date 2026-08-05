@@ -100,8 +100,8 @@ export const education = [
 export const experience = [
   
   {
-  company: "Lahore Analytics Labs",
-  role: "Web Data Engineer",
+  company: "Freelance",
+  role: "Data Engineer",
   location: "Lahore",
   period: "Jul 2024 — Jan 2025",
   points: [
@@ -122,7 +122,7 @@ export const experience = [
   },
 {
     company: "Arbisoft",
-    role: "Machine Learning Engineer",
+    role: "Machine Learning Engineer (Intern)",
     location: "Lahore",
     period: "Mar 2024 — June 2024",
     points: [
